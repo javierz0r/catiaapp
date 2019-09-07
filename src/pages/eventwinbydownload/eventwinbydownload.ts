@@ -148,18 +148,9 @@ reclamarevento()
      .subscribe(res => {
      
       loader.dismiss()
-     if(res=="Registration successfull"){
+     if(res=="Premio Entregado"){
 
-
-      
-//inicia el updater que amenta 57:
-
-
-//termina el updater que aumenta 57
-
-
-
-
+//suponemos que se estara realizando el update 57 O NO  y esperamos respuesta
        let alert = this.alertCtrl.create({
          title:"CONGRATS",
          subTitle:(res),
