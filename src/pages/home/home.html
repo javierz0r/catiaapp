@@ -1,0 +1,63 @@
+
+
+
+<ion-content class="fondologin" padding>
+
+
+  <br><br><br>
+
+    <ion-row>
+        <ion-col text-center>
+            <!-- <img src="/assets/imgs/logo-login.png" style="align-items: center" width="170px" /> -->
+        </ion-col>
+    </ion-row>
+ <br><br><br>
+  <ion-list no-lines>
+    <ion-item floating style="color:#8F8F8F" class="losimputs">
+      <ion-input  round type="text" placeholder="Username" name="username" #username></ion-input>
+    </ion-item>
+  
+    <ion-item class="losimputs">
+      <ion-input floating style="color:#8F8F8F" type="password" placeholder="Password" name="password" #password></ion-input>
+    </ion-item>
+
+     <br><br>
+    <button ion-button round outline block (click)="signIn()">Sign In</button>
+    <button ion-button round outline block (click)="signUp()">Register</button>
+  
+  </ion-list>
+
+<br>
+
+<ion-grid>
+  <ion-row>
+      <ion-col> 
+          &nbsp;
+      </ion-col>
+        <ion-col> 
+            &nbsp;
+        </ion-col>
+        <!-- <ion-col>
+  
+          <button ion-button color="btn-blue" (click)="login()" *ngIf="!isLoggedIn" round>Facebook</button>
+
+        </ion-col>
+          <ion-col>
+              <button ion-button color="danger" (click)="loginGoogle1()" round class="btn-google">Google</button>
+          </ion-col> -->
+        <ion-col>
+        </ion-col>
+    <ion-col>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+  <div *ngIf="isLoggedIn">
+    <img src="{{user.picture.data.url}}" alt=""><br>
+    <i>{{user.name}}</i><br>
+    <i>{{user.email}}</i><br>
+  </div>
+  
+
+ 
+</ion-content>

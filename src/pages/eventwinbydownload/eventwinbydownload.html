@@ -1,0 +1,120 @@
+<!--
+  Generated template for the PromotiondetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header color="primary">
+    <ion-navbar color="dark">
+  <h2 color="primary">Descargar La App y Gana 100kk</h2>
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content padding>
+  
+  <ion-card>    
+      <ion-item >
+          <!-- <h6>ID: {{this.promotions.id}}</h6> -->
+      </ion-item>
+  
+      <ion-item >
+          <h2>Reclama por descargar La App</h2>
+      </ion-item>
+  
+    <!-- inician detalles -->
+  
+       
+    <ion-card> Reclama (100kk)Adena por descargar e instalar la APP. </ion-card>
+  
+  
+  <!-- terminan detalles -->
+      <ion-item >
+          <h4>Estatus:</h4>
+      </ion-item>
+      <ion-item >
+          <p> Activo Actualmente</p>
+      </ion-item>
+      <ion-item >
+          <h4>QuienesPueden:</h4>
+          <p> Todos Los Usuarios            </p>
+      </ion-item>
+  </ion-card> 
+
+
+
+
+  <ion-item>
+      <ion-label>Character:</ion-label>
+
+      <ion-select *ngFor="let pj of pjs"  #character>
+
+        <ion-option>{{this.pj.pj}}</ion-option>
+
+      </ion-select>
+</ion-item>
+
+
+
+
+  <button ion-button block class="btn-danger"  (click)="reclamarevento()">Reclamar Premio...</button>
+
+  
+  <ion-card (click)="gotoreviewpage()" disabled> Votar
+  
+      <ionic3-star-rating #rating
+      activeIcon = "ios-star"
+      defaultIcon = "ios-star-outline"
+      activeColor = "#f53d3d" 
+      defaultColor = "#621818"
+      readonly="false"
+      rating="3"
+      fontSize = "32px"
+      (ratingChanged)="logRatingChange($event)">
+      </ionic3-star-rating>
+  
+  
+  </ion-card> 
+  
+  
+  </ion-content>
+  
+  
+  
+  <!-- incia el footer -->
+  <ion-footer>
+  <!-- inician los botones del piso       -->
+      <ion-buttons text-center end>
+  
+                <button ion-button icon-only color="dark" (click)="Profile()">
+                  <ion-icon name="home"></ion-icon>
+                </button>
+  
+        
+  
+                <button ion-button icon-only color="dark" (click)="List()">
+                  <ion-icon name="person"></ion-icon>
+                </button>
+  
+        
+  
+                <button ion-button icon-only color="dark" (click)="Search()">
+                  <ion-icon name="search"></ion-icon>
+                </button>
+  
+        
+  
+                <button ion-button icon-only color="dark" (click)="Favorites()">
+                  <ion-icon name="star"></ion-icon>
+                </button>
+  
+        
+  
+                <button ion-button menuToggle="leftMenu" icon-only color="dark">
+                  <ion-icon name="menu"></ion-icon>
+                </button>
+  
+        </ion-buttons>
+  <!-- terminaron -->
+  </ion-footer>
+  <!-- termina el footer -->

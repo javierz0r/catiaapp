@@ -1,0 +1,63 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title center>Eventos Activos:</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: #f5f5ff">
+    <div class="botoncentrado">
+        <button ion-button (click)="backfuctionbynavigation()" class="botonredondo" color="primary">X</button>
+      </div>
+<div *ngFor="let promotion of promotions" (click)="itemClicked($event, promotion)">
+
+
+
+    
+        <ion-card color="light" mode="ios">
+        <ion-card-header>
+            <img src="data:image/gif;base64,{{promotion.promoimg}}" class="border-img"/>
+
+           <ion-card-title text-center>{{promotion.promoname}}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <p>{{promotion.promodetails}}.</p>
+        </ion-card-content>
+      </ion-card>
+
+</div>
+ 
+</ion-content>
+
+
+
+<ion-footer>
+ 
+    <ion-buttons text-center end>
+
+              <button ion-button icon-only color="dark" (click)="Profile()">
+                <ion-icon name="home"></ion-icon>
+              </button>
+
+              <button ion-button icon-only color="dark" (click)="List()">
+                <ion-icon name="person"></ion-icon>
+              </button>
+      
+              <button ion-button icon-only color="dark" (click)="Search()">
+                <ion-icon name="search"></ion-icon>
+              </button>
+
+              <button ion-button icon-only color="dark" (click)="Favorites()">
+                <ion-icon color="danger" name="star"></ion-icon>
+              </button>
+
+      
+
+              <button ion-button menuToggle="leftMenu" icon-only color="dark">
+                <ion-icon name="menu"></ion-icon>
+              </button>
+
+      </ion-buttons>
+
+</ion-footer>

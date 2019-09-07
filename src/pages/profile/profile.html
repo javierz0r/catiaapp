@@ -1,0 +1,157 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header color="dark">
+
+
+  <ion-navbar color="imputsfondo">
+    <ion-title>CyrusApp</ion-title>
+ <br>
+<!-- Searchbar with a placeholder -->
+<ion-searchbar placeholder="search"></ion-searchbar>
+<!-- Searchbar with a placeholder -->
+
+
+  </ion-navbar>
+
+
+
+
+
+</ion-header>
+
+
+
+
+<ion-content padding>
+
+
+
+<!-- empieza el contenedor de las imagenes slide -->
+
+<ion-toolbar>
+    <ion-slides pager class="tutorial-page">
+
+        <ion-slide>
+   
+          <img src="/assets/imgs/ica-slidebox-img-1.jpg" class="slide-image"/>
+          
+         
+        </ion-slide>
+        <ion-slide>
+            <img src="/assets/imgs/ica-slidebox-img-2.jpg" class="slide-image"/>
+            
+         
+        </ion-slide> 
+      </ion-slides>  
+ </ion-toolbar>
+
+ <ion-title>Eventos Recomendados para ti:</ion-title>
+
+<!--termina el contenedor de las imagenes slide -->
+
+
+
+
+<ion-list color="primary">
+    
+<ion-item  *ngFor="let promotion of promotions"  (click)="itemClicked($event, promotion)">
+
+<ion-card class="fondocolorado">
+
+<ion-card class="myCard">
+        <!-- <h6>IMG: {{promotion.promoimg}}</h6> -->
+        <ion-icon name="star" color="danger"></ion-icon>
+        <img src="data:image/gif;base64,{{promotion.promoimg}}" class="border-img"/>
+        <div class="textonimg">
+            <div class="card-title">Evento:{{promotion.promoname}}</div>
+            <div class="card-title">Para:{{promotion.restaso}}</div>
+            <div class="card-title">Status:{{promotion.descuentopromo}}</div>
+
+
+         </div>
+         <div class="card-title">Mas Info... ||Pincha Aqui||</div>
+
+</ion-card> 
+</ion-card> 
+</ion-item>
+
+<!-- eventos estaticos que siempre estaran en la app -->
+<ion-item    (click)="quierovotar()">
+
+    <ion-card class="fondocolorado">
+    
+    <ion-card class="myCard">
+            <!-- <h6>IMG: {{promotion.promoimg}}</h6> -->
+            <ion-icon name="star" color="danger"></ion-icon>
+            <img src="" class="border-img"/>
+            <div class="textonimg">
+                <div class="card-title">Evento: 100kk descargar APP</div>
+                <div class="card-title">Para:Todos Los Usuarios                  </div>
+                <div class="card-title">Status:Activo Actualmente</div>
+    
+    
+             </div>
+             <div class="card-title">Mas Info... ||Pincha Aqui||</div>
+    
+    </ion-card> 
+    </ion-card> 
+    </ion-item>
+<!-- termina eventos estaticos que siempre estaran en la app -->
+
+
+
+</ion-list>
+
+
+
+</ion-content>
+<!-- inicia el menu del piso -->
+
+<ion-footer>
+
+ 
+
+
+      
+    <ion-buttons text-center end>
+
+              <button ion-button icon-only color="dark" (click)="Profile()">
+                <ion-icon color="danger" name="home"></ion-icon>
+              </button>
+
+      
+
+              <button ion-button icon-only color="dark" (click)="List()">
+                <ion-icon name="person"></ion-icon>
+              </button>
+
+      
+ 
+
+
+              <button ion-button icon-only color="dark" (click)="Search()">
+                <ion-icon name="search"></ion-icon>
+              </button>
+
+      
+
+              <button ion-button icon-only color="dark" (click)="Favorites()">
+                <ion-icon name="star"></ion-icon>
+              </button>
+
+      
+
+              <button ion-button menuToggle="leftMenu" icon-only color="dark">
+                <ion-icon name="menu"></ion-icon>
+              </button>
+
+      </ion-buttons>
+
+</ion-footer>
+
+
+

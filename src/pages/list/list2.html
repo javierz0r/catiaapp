@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Profilee</ion-title>
+
+
+
+<div>
+  {{username}} 
+
+</div>
+  </ion-navbar>
+</ion-header>
+
+
+
+
+<ion-content padding>
+
+  <ion-item *ngFor="let item of items" >
+    <h2>Welcome {{item.username}}</h2>
+    <h3>Your profile information is as follows:</h3>
+    <ion-row>
+      <ion-col col-4>
+       Password
+      </ion-col>
+      <ion-col col-8>
+    {{item.password}}
+      </ion-col>
+   
+  </ion-row>
+  <ion-row>
+      <ion-col col-4>
+        Telephone
+      </ion-col>
+      <ion-col col-8>
+    {{item.telephone}}
+      </ion-col>
+   
+  </ion-row>
+  <ion-row>
+      <ion-col col-4>
+      Email 
+      </ion-col>
+      <ion-col col-8>
+    {{item.email}}
+      </ion-col>
+   
+  </ion-row>
+   </ion-item>
+  </ion-content>
+  
+
+
+
+<ion-footer>
+
+ 
+
+
+      
+    <ion-buttons text-center end>
+
+              <button ion-button icon-only color="dark">
+                <ion-icon name="home"></ion-icon>
+              </button>
+
+      
+
+              <button ion-button icon-only color="dark">
+                <ion-icon  color="danger" name="person"></ion-icon>
+              </button>
+
+      
+ 
+
+
+      
+
+              <button ion-button icon-only color="dark">
+                <ion-icon name="search"></ion-icon>
+              </button>
+
+      
+
+              <button ion-button icon-only color="dark">
+                <ion-icon name="star"></ion-icon>
+              </button>
+
+      
+
+              <button ion-button menuToggle="leftMenu" icon-only color="dark">
+                <ion-icon name="menu"></ion-icon>
+              </button>
+
+      </ion-buttons>
+
+</ion-footer>

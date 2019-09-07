@@ -1,0 +1,130 @@
+page-list {
+
+    .fondologin{
+        background-color: #1C1C1C!important;
+    }
+    .losimputs {
+        background: color($colors, imputsfondo, base);
+
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 10px;
+        margin-bottom: 10px;  
+
+      }
+
+      .tecentro {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+
+//inicia el side
+
+.getting-started {
+  p {
+    margin: 20px 0;
+    line-height: 22px;
+    font-size: 16px;
+  }
+}
+
+.bar-button-menutoggle {
+  display: inline-flex;
+}
+  
+ion-footer {
+    background-color: #1C1C1C!important;
+    ion-icon {
+        font-size: 30px;
+        
+        
+    }
+}
+.circle-pic img{
+  width:70px;
+  height:70px;
+  -webkit-border-radius: 50%!important;
+  border-radius: 50%;
+  position: relative;
+  
+}
+
+.ion-text-center{
+  text-align: center;
+}
+
+.see-benefits{
+  color:#FFFF00;
+}
+
+/*barra de progresso*/
+.progress-outer { 
+
+  width:170%; 
+
+  margin: 20px 20%; 
+
+  padding: 4px; 
+
+  text-align: center; 
+
+  background-color: #f4f4f4; 
+
+  border: 1px solid #dcdcdc; 
+
+  color: #fff; 
+
+  border-radius: 20px; 
+
+} 
+
+.progress-inner { 
+
+  min-width: 2%; 
+
+  white-space: nowrap; 
+
+  overflow: hidden; 
+
+  padding: 5px; 
+
+  border-radius: 20px; 
+
+  background-color: red; 
+  height: 10px;
+}
+
+.btn-myPoints{
+  background: #020266;
+  height: 7%;
+  color: #fff;
+  border-radius: 7px;
+}
+
+.back-gris{
+  background: #757575;
+}
+
+.btn-myPoints2{
+  background: #020266;
+  width: 100%;
+  height: 15%;
+  position: relative;
+  left: 4%;
+
+}
+.btn-myPoints2:hover{
+ // background: #252588;
+  color: #fff;
+}
+.btn-danger{
+  background:red;
+  width: 92%;
+  height: 7%;
+  position: left;
+  left: 4%;
+  border-radius: 7px;
+}
+}

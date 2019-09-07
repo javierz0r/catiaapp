@@ -1,0 +1,55 @@
+<!-- <ion-nav [root]="rootPage"></ion-nav> -->
+<!-- Linea de arriba comentada ya que chocaba con los openlinks de el side menu -->
+
+
+<!-- inician los menu show hide cyrus side -->
+
+<ion-menu id="leftMenu"  [content]="content" side="right" type="overlay">
+  <ion-header>
+
+
+
+    <!-- se comento la cabecera ya que el menu no va en el diseño -->
+    <!-- <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar> -->
+
+        <!-- se comento la cabecera ya que el menu no va en el diseño -->
+  </ion-header>
+  <ion-content color="danger">
+    <ion-list color="danger">
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">{{p.title}}</button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+<!-- termina el menu cyrus show hide side -->
+
+<!-- Este menu no esta siendo llamado es el de mostrar cosas en el mismo side -->
+<!-- <ion-menu id="rightMenu" [content]="content" side="right" type="reveal">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Items</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="rightMenuClick('Item One')">Item UNO</button>
+      <button ion-item (click)="rightMenuClick('Item Two')">Item DOS</button>
+    </ion-list>
+    <ion-card *ngIf="text">
+      <ion-card-content>
+        Tu has pulsado {{ text }}
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</ion-menu> -->
+<!-- Este menu no esta siendo llamado es el de mostrar cosas en el mismo side -->
+
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+
+
+  <!-- terminan los show hide side -->

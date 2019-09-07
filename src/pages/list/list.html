@@ -1,0 +1,148 @@
+<!-- <ion-header >
+  <ion-navbar>
+ 
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding class="back-gris">
+<!-- LA VARIABLE DE LA IMAGEN DE AVATAR INICIARA EN http://cyrustheapp.com/recursos/avatars/ CON EL NOMBRE DE LA IMAGEN SUBIDA AL MOMENTO DE REGISTRARSE -->
+<!-- avatar.png es lo que debe figurar en el registro avatar de la db -->
+
+
+<!-- en este ion item su ngfor esta orientado solo a cargar los datos del usuario del fecth data que esta relacionado con el sector de datos de usuario -->
+<ion-item *ngFor="let item of items" class="back-gris">
+
+    <div class="circle-pic" style="position: relative; left:40%;">
+        <!-- <img  src="http://cyrustheapp.com/recursos/avatars/avatar.png"/> -->
+        <img src="data:image/jpeg;base64,{{this.item.avatar}}"/>
+      </div>
+
+<h6 class="ion-text-center" >Welcome {{this.item.username}} </h6>
+
+</ion-item>
+
+
+<!-- en este ngfor se cargan los datos como puntos del usuario del letpoints -->
+  <ion-item>
+    
+
+
+   <br>
+
+   
+    <ion-card>
+        <ion-card-header>
+            <ion-grid>
+                <ion-row>
+                  <ion-col>
+                    <div>
+                        <ion-img style="width: 60px; height: 60px; border-radius:50%;" src="..."></ion-img>
+                    </div>
+                  </ion-col>
+                  <ion-col>
+                    <div>
+
+                        <ion-title> Level title </ion-title>
+                        <ion-title> level "2" </ion-title>
+                       
+                    </div>
+                  </ion-col>
+                </ion-row>
+          </ion-grid>
+        </ion-card-header>
+       </ion-card>
+       <ion-card>
+          <ion-card-header>
+              <ion-grid>
+                  <ion-row>
+                    <ion-col>
+                      
+                      <div>
+                          <ion-title style="position: relative;right:25%;top:-3%;"> Level Up </ion-title> 
+                          <div class="progress-outer">
+                              <div class="progress-inner" [style.width]="progress + '%'">
+                                <p>  {{progress}}</p>
+                              </div>
+                            </div>
+                            
+                            <!-- <ion-title> 2.769 Until level 3 </ion-title> -->
+                      </div>
+                      <!-- <my-component [propertyName]="someValue" (someEvent)="doSomething()"></my-component> -->
+                    </ion-col>
+                    <ion-col>        
+                    </ion-col>
+                  </ion-row>
+            </ion-grid>
+          </ion-card-header>
+         </ion-card>
+
+         <ion-card>
+            <ion-card-header>
+                <ion-grid>
+                    <ion-row>
+                      <ion-col>
+ <!--este ngFor sera para poder usar los items fuera de los ngfor de points pero dentro del contenedor de la consulta user data y **mostrar el nivel, dentro del contenedor 
+  con ngfor points** -->
+<ion-item >
+                              <ion-title class="ion-text-center">My Xp Earned</ion-title>          
+                              <ion-title class="ion-text-center">experience: {{ experiences }}</ion-title>
+</ion-item>
+<!--este ngFor sera para poder usar los items de la consulta ser data y mostrar el nivel -->                              
+                      </ion-col>
+                      <ion-col>        
+                      </ion-col>
+                    </ion-row>
+              </ion-grid>
+            </ion-card-header>
+           </ion-card>
+          
+          </ion-item>             
+              <button ion-button block class="btn-myPoints" (click)="MyPointsButtonToPage()">My point: {{ points }}</button>
+              <button ion-button block class="btn-danger"  (click)="MorepointsButtonToPage()">Get more points...</button>
+            
+ 
+
+
+  </ion-content>
+
+
+
+
+<ion-footer>
+
+
+
+
+
+    <ion-buttons text-center end>
+
+              <button ion-button icon-only color="dark" (click)="Profile()">
+                <ion-icon name="home"></ion-icon>
+              </button>
+
+      
+
+              <button ion-button icon-only color="dark" (click)="List()">
+                <ion-icon  color="danger" name="person"></ion-icon>
+              </button>
+
+      
+              <button ion-button icon-only color="dark" (click)="Search()">
+                <ion-icon name="search"></ion-icon>
+              </button>
+
+      
+
+              <button ion-button icon-only color="dark" (click)="Favorites()">
+                <ion-icon name="star"></ion-icon>
+              </button>
+
+      
+
+              <button ion-button menuToggle="leftMenu" icon-only color="dark">
+                <ion-icon name="menu"></ion-icon>
+              </button>
+
+      </ion-buttons>
+
+</ion-footer>
