@@ -4,14 +4,14 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header color="danger">
-  <ion-navbar color="danger">
-<h2 color="primary">{{this.promotions.promoname}}</h2>
+<ion-header color="dark">
+  <ion-navbar color="primary">
+<h2 color="primary"><ion-title>{{this.promotions.promoname}}</ion-title></h2>
   </ion-navbar>
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="getstart" padding>
 
 <ion-card>
     <ion-item >
@@ -30,11 +30,7 @@
     </ion-item>
 
   <!-- inician detalles -->
-
-     
   <ion-card>      P. Details:  {{this.promotions.promodetails}}   </ion-card>
-
-
 <!-- terminan detalles -->
     <ion-item >
         <h4>P. Discount: {{this.promotions.descuentopromo}}</h4>
@@ -47,25 +43,6 @@
         <h4> {{this.promotions.restaso}}</h4>
     </ion-item>
 </ion-card> 
-
-<!-- <form >
-
-    <ionic3-star-rating #rating 
-        activeIcon = "ios-star"
-        defaultIcon = "ios-star-outline"
-        activeColor = "#d1301a"
-        defaultColor = "#aaaaaa"
-        readonly = "false"
-        fontSize = "32px"
-        (ratingChanged)="logRatingChange($event)"
-        formControlName="starRating">
-    </ionic3-star-rating>
-
-</form> -->
-
-
-
-
 
 
 <ion-card (click)="gotoreviewpage()"> 

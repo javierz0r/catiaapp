@@ -1,12 +1,42 @@
 page-profile {
 
+  .getstart {
+
+    background-image: url('/assets/imgs/fondo.jpg');
+    // background: url('../../img/getstart.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+   }
+
+
+//    .partestransparentes{
+//     background: transparent;
+// }
+
+
+.partestransparentes{
+  background-color: rgba(221, 219, 219, 0.153)!important;
+  // opacity: 0.5;
+}
+
+
+.notantransparente{
+  background-color: rgba(221, 219, 219, 0.153)!important;
+  // opacity: 0.5;
+}
+
+
+
+
+
+
   .fondocolorado{
-    background-color: rgba(230, 127, 127, 0.329)!important;
+    background-color: rgba(221, 219, 219, 0.753)!important;
     opacity: 0.9;
 }
 
     .fondologin{
-        background-color: rgb(230, 230, 230)!important;
+        background-color: rgb(187, 155, 51)!important;
     }
     .losimputs {
         background: color($colors, imputsfondo, base);
@@ -112,6 +142,7 @@ ion-footer {
 
 .myCard{
   position:relative;
+  background-color: rgba(221, 219, 219, 0.400)!important;
 
 }
 

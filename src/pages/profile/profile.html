@@ -26,7 +26,7 @@
 
 
 
-<ion-content padding>
+<ion-content class="getstart" padding>
 
 
 
@@ -56,11 +56,11 @@
 
 
 
-<ion-list color="primary">
+<ion-list  color="primary">
     
-<ion-item  *ngFor="let promotion of promotions"  (click)="itemClicked($event, promotion)">
+<ion-item class="partestransparentes" *ngFor="let promotion of promotions"  (click)="itemClicked($event, promotion)">
 
-<ion-card class="fondocolorado">
+<ion-card class="notantransparente" >
 
 <ion-card class="myCard">
         <!-- <h6>IMG: {{promotion.promoimg}}</h6> -->
@@ -68,6 +68,7 @@
         <img src="data:image/gif;base64,{{promotion.promoimg}}" class="border-img"/>
         <div class="textonimg">
             <div class="card-title">Evento:{{promotion.promoname}}</div>
+
             <div class="card-title">Para:{{promotion.restaso}}</div>
             <div class="card-title">Status:{{promotion.descuentopromo}}</div>
 
@@ -80,9 +81,9 @@
 </ion-item>
 
 <!-- eventos estaticos que siempre estaran en la app -->
-<ion-item    (click)="quierovotar()">
+<ion-item  class="partestransparentes"  (click)="quierovotar()">
 
-    <ion-card class="fondocolorado">
+    <ion-card class="notantransparente">
     
     <ion-card class="myCard">
             <!-- <h6>IMG: {{promotion.promoimg}}</h6> -->
@@ -105,6 +106,7 @@
 
 
 </ion-list>
+
 
 
 

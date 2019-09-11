@@ -1,13 +1,17 @@
 
 <ion-header>
-  <ion-navbar>
-    <ion-title center>Eventos Activos:</ion-title>
+  <ion-navbar color="primary">
+    <ion-title color="primary" center>Eventos Activos:</ion-title>
   </ion-navbar>
+
+
+
+
 </ion-header>
 
 <ion-content padding style="background-color: #f5f5ff">
     <div class="botoncentrado">
-        <button ion-button (click)="backfuctionbynavigation()" class="botonredondo" color="primary">X</button>
+        <button ion-button (click)="gotohomepage()" class="botonredondo" color="primary">X</button>
       </div>
 <div *ngFor="let promotion of promotions" (click)="itemClicked($event, promotion)">
 

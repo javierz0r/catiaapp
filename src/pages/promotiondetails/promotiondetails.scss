@@ -4,5 +4,186 @@ page-promotiondetails {
         border-radius: 3px;
       }
 
+      .getstart {
+
+        background-image: url('/assets/imgs/fondo2.jpg');
+        // background: url('../../img/getstart.png');
+        background-repeat: no-repeat;
+        background-size:cover;
+       }
+    
+    
+    //    .partestransparentes{
+    //     background: transparent;
+    // }
+    
+    
+    .partestransparentes{
+      background-color: rgba(221, 219, 219, 0.153)!important;
+      // opacity: 0.5;
+    }
+    
+    
+    .notantransparente{
+      background-color: rgba(221, 219, 219, 0.153)!important;
+      // opacity: 0.5;
+    }
+    
+    
+    
+    
+    
+    
+      .fondocolorado{
+        background-color: rgba(221, 219, 219, 0.753)!important;
+        opacity: 0.9;
+    }
+    
+        .fondologin{
+            background-color: rgb(187, 155, 51)!important;
+        }
+        .losimputs {
+            background: color($colors, imputsfondo, base);
+    
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 10px;
+            margin-bottom: 10px; 
+    
+          }
+    
+        .promocionescontenedor {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border-left: 10px;
+    
+        }
+        .itemscentrados {
+          align-items: center;
+    
+      }
+    
+    //empieza el menu footer
+    
+    //dice que los iconos anteriores sean mas grandes
+    
+    ion-footer {
+        background-color: #1C1C1C!important;
+        ion-icon {
+            font-size: 30px;
+            
+            
+        }
+    }
+    
+    
+    //termina el menu footer
+    
+    //estilos del sidebar
+    .tutorial-page {
+    
+      .toolbar-background {
+        background: #fff;
+        border-color: transparent;
+      }
+    
+      .slide-zoom {
+        height: 100%;
+      }
+    
+      .slide-title {
+        margin-top: 0rem;
+      }
+    
+      .slide-image {
+        max-height: 50%;
+        max-width: 100%;
+        margin: 0px 0;
+      }
+    
+      b {
+        font-weight: 500;
+      }
+    
+      p {
+        padding: 0 40px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #60646B;
+    
+        b {
+          color: #000000;
+        }
+      }
+    
+    }
+    
+    //estilos del sidebar
+    
+    
+    
+    //estilo del show hide menu
+    .getting-started {
+      p {
+        margin: 20px 0;
+        line-height: 22px;
+        font-size: 16px;
+      }
+    }
+    
+    .bar-button-menutoggle {
+      display: inline-flex;
+    }
+    //estilo del show hide menu
+    
+    
+    .border-img{
+      border-radius: 3px;
+      height: 150px;
+      width: 350px;
+    }
+    
+    .myCard{
+      position:relative;
+      background-color: rgba(221, 219, 219, 0.453)!important;
+    
+    }
+    
+    
+    .textonimg{
+      width: 100%;
+      height: 60px;
+      position: absolute;
+      z-index: 99;
+      bottom: 0px;
+      opacity: 0.6;
+          background: #000;
+      color: rgb(255, 255, 255);
+      font-weight: bold;  
+    
+      
+    }
+    
+    
+    .CyrusLogoWhite{
+      width: 110px;
+      display:block;
+      margin:auto;
+      //height: 65px;
+     }
+    
+    
+     .botoncentrado {
+      text-align: center;
+    }
+    
+    .botonredondo{
+      border-radius: 50%;
+      overflow:hidden;
+    }
+    
+    
+
 
 }

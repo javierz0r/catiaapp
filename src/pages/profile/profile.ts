@@ -62,19 +62,7 @@ export class ProfilePage {
         content: 'Processing please wait...',
       });
   
-      // loader.present().then(() => {
-      //   this.http.post('http://cyrustheapp.com/recursos/fetch_data.php', data, options)
-      //     .map(res => res.json())
-      //     .subscribe(res => {
-  
-      //       loader.dismiss()
-      //       this.items = res.server_response;
-  
-      //       console.log(this.items);
-      //     });
-      // });
-  
-  //tablita restaurantes-.-
+
   
       loader.present().then(() => {
         

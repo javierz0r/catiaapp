@@ -99,9 +99,10 @@ export class FavoritesPage {
     
 
 
+  }
 
-
-
+  gotohomepage() {
+    this.navCtrl.push (ProfilePage);
   }
 
 //declaro funciones de los botones de abajo
