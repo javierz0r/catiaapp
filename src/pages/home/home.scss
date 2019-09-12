@@ -1,6 +1,36 @@
 page-home {
 
 
+  .getstart {
+
+    background-image: url('/assets/imgs/fondo.jpg');
+    // background: url('../../img/getstart.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+   }
+
+   .boton1 {
+
+    background-image: url('/assets/imgs/boton.jpg');
+    // background: url('../../img/getstart.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+   }
+
+
+.partestransparentes{
+  background-color: rgba(221, 219, 219, 0.153)!important;
+  // opacity: 0.5;
+}
+
+
+.notantransparente{
+  background-color: rgba(221, 219, 219, 0.153)!important;
+  // opacity: 0.5;
+}
+
+
+
     .fondologin{
         background-color: #1C1C1C!important;
     }
