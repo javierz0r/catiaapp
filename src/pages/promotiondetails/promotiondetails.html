@@ -13,39 +13,39 @@
 
 <ion-content padding class="getstart" padding>
 
-<ion-card>
-    <ion-item >
+<ion-card class="notantransparente">
+    <ion-item class="notantransparente" >
         <img src="data:image/jpeg;base64,{{this.promotions.promoimg}}" class="border-img" />
     </ion-item>
 
 </ion-card> 
 
-<ion-card>    
-    <ion-item >
+<ion-card class="notantransparente">     
+    <ion-item class="notantransparente" >
         <h6>ID: {{this.promotions.id}}</h6>
     </ion-item>
 
-    <ion-item >
+    <ion-item class="notantransparente" >
         <h2>P. Name: {{this.promotions.promoname}}</h2>
     </ion-item>
 
   <!-- inician detalles -->
-  <ion-card>      P. Details:  {{this.promotions.promodetails}}   </ion-card>
+  <ion-card class="notantransparente">      P. Details:  {{this.promotions.promodetails}}   </ion-card>
 <!-- terminan detalles -->
-    <ion-item >
+    <ion-item class="notantransparente">
         <h4>P. Discount: {{this.promotions.descuentopromo}}</h4>
     </ion-item>
-    <ion-item >
+    <ion-item class="notantransparente">
         <h4> {{this.promotions.descuentopromo}}</h4>
     </ion-item>
-    <ion-item >
+    <ion-item class="notantransparente" >
         <h4>Promo of this Restaurant:</h4>
         <h4> {{this.promotions.restaso}}</h4>
     </ion-item>
 </ion-card> 
 
 
-<ion-card (click)="gotoreviewpage()"> 
+<ion-card class="notantransparente" (click)="gotoreviewpage()"> 
 
     <ionic3-star-rating #rating
     activeIcon = "ios-star"

@@ -1,5 +1,29 @@
 page-eventwinbydownload {
 
+
+
+  .getstart {
+
+    background-image: url('/assets/imgs/fondo2.jpg');
+    // background: url('../../img/getstart.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+   }
+
+
+   .partestransparentes{
+    background-color: rgba(221, 219, 219, 0.153)!important;
+    // opacity: 0.5;
+  }
+  
+  
+  .notantransparente{
+    background-color: rgba(221, 219, 219, 0.153)!important;
+    // opacity: 0.5;
+  }
+
+
+
 }
 
 .btn-danger{

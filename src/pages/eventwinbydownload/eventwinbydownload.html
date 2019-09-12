@@ -11,31 +11,29 @@
   </ion-header>
   
   
-  <ion-content padding>
+  <ion-content padding class="getstart" padding>
   
-  <ion-card>    
-      <ion-item >
-          <!-- <h6>ID: {{this.promotions.id}}</h6> -->
-      </ion-item>
+  <ion-card class="notantransparente">    
+
   
-      <ion-item >
+      <ion-item class="notantransparente" >
           <h2>Reclama por descargar La App</h2>
       </ion-item>
   
     <!-- inician detalles -->
   
        
-    <ion-card> Reclama (100kk)Adena por descargar e instalar la APP. </ion-card>
+    <ion-card class="notantransparente"> Reclama (100kk)Adena por descargar e instalar la APP. </ion-card>
   
   
   <!-- terminan detalles -->
-      <ion-item >
+      <ion-item class="notantransparente">
           <h4>Estatus:</h4>
       </ion-item>
-      <ion-item >
+      <ion-item class="notantransparente">
           <p> Activo Actualmente</p>
       </ion-item>
-      <ion-item >
+      <ion-item class="notantransparente" >
           <h4>QuienesPueden:</h4>
           <p> Todos Los Usuarios            </p>
       </ion-item>
@@ -60,7 +58,7 @@
   <button ion-button block class="btn-danger"  (click)="reclamarevento()">Reclamar Premio...</button>
 
   
-  <ion-card (click)="gotoreviewpage()" disabled> Votar
+  <ion-card class="notantransparente" (click)="gotoreviewpage()" disabled> Votar
   
       <ionic3-star-rating #rating
       activeIcon = "ios-star"
