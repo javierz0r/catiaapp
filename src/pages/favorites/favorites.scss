@@ -1,3 +1,30 @@
+page-favorites {
+
+
+  .getstart {
+
+    background-image: url('/assets/imgs/eventosactivos.jpg');
+    // background: url('../../img/getstart.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+   }
+
+
+   .partestransparentes{
+    background-color: rgba(221, 219, 219, 0.153)!important;
+    // opacity: 0.5;
+  }
+  
+  
+  .notantransparente{
+    background-color: rgba(221, 219, 219, 0.153)!important;
+    // opacity: 0.5;
+  }
+  
+
+
+
+
 .CyrusLogoWhite{
     width: 110px;
     display:block;
@@ -14,3 +41,8 @@
     border-radius: 50%;
     overflow:hidden;
   }
+
+
+
+
+}
