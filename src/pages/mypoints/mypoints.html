@@ -1,7 +1,7 @@
 <ion-header color="danger">
  
     <ion-item color="danger">
-      <span item-end>Mys Points</span>
+      <span item-end>My Special Coins</span>
    </ion-item>
     
 
@@ -15,14 +15,15 @@
 
       <ion-segment color="light" mode="md" [(ngModel)]="section">
         <ion-segment-button value="one">
+
           <img color="blanco" style="height: 30px;width: 30px;" src="/assets/imgs/pointblue.svg">
 
         </ion-segment-button>
         <ion-segment-button value="two">
-          <img color="blanco" style="height: 30px;width: 30px;" src="/assets/imgs/pointblue.svg">
+          <img color="blanco" style="height: 30px;width: 30px;" src="/assets/imgs/dollarcoin.svg">
         </ion-segment-button>
         <ion-segment-button value="three">
-          <img color="blanco" style="height: 30px;width: 30px;" src="/assets/imgs/pointblue.svg">
+          <img color="blanco" style="height: 30px;width: 30px;" src="/assets/imgs/OneCoin.svg">
         </ion-segment-button>
       </ion-segment>
     </ion-toolbar>
@@ -45,7 +46,7 @@
         <ion-col col-4>
         </ion-col>
         <ion-col col-4>
-          <img src="/assets/imgs/points-cyrus.png" style="height: 100px;width: 100px;" />
+          <img src="/assets/imgs/pointblue.svg" style="height: 100px;width: 100px;" />
         </ion-col>
         <ion-col col-4>
         {{ points }}
@@ -68,7 +69,7 @@
 <br>   
 </ion-row>
 <ion-row align-items-center>
-<br>  
+<h1>Catia Yen Coins</h1>
 </ion-row>
 <ion-row align-items-center>
 <br>
@@ -84,22 +85,22 @@
 <ion-row align-items-end>
   
   
-            <ion-col align-self-start>
-                Redeemed
-                <img src="/assets/imgs/redeemed.png"  style="height: 50px;width: 50px;" />
-                <h6>122</h6>
-              </ion-col>
+  <ion-col align-self-start>
+    Recargar
+    <img src="/assets/imgs/paypal.svg"  style="height: 50px;width: 50px;" />
+   Recargado: <h6>128</h6>
+  </ion-col>
 
-            
-            <ion-col align-self-center>
 
-            </ion-col>
+<ion-col align-self-center>
 
-            <ion-col align-self-end>
-             Historic
-             <img src="/assets/imgs/historic.png"  style="height: 50px;width: 50px;" />
-             <h6>128</h6>
-            </ion-col>
+</ion-col>
+
+<ion-col align-self-end>
+ Historial Procesado:
+ <img src="/assets/imgs/report.svg"  style="height: 50px;width: 50px;" />
+ <h6>(+)128, (-)128</h6>
+</ion-col>
   
   
 </ion-row>
@@ -118,18 +119,21 @@
 
 
 
-<!-- empieza vista del medio -->
+<!-- empieza vista del derecha -->
 
 <ion-card>
-    <ion-card-content>
+  <ion-card-content>
 
 <ion-grid>
 <ion-row align-items-start>
-        <ion-col col-4></ion-col>
-        <ion-col col-4>
-          <img src="/assets/imgs/cyrus-gold.png" style="height: 100px;width: 100px;" />
-        </ion-col>
-        <ion-col col-4 text-color="danger">Not Info</ion-col>
+      <ion-col col-4>
+      </ion-col>
+      <ion-col col-4>
+        <img src="/assets/imgs/dollarcoin.svg" style="height: 100px;width: 100px; color:#3D5AD8;" />
+      </ion-col>
+      <ion-col col-4>
+      {{ points }}
+      </ion-col>
 
 
 </ion-row>
@@ -137,7 +141,7 @@
 <!-- seccion de abajo - media-->
 
 
- 
+
 <ion-row align-items-center>
 
 </ion-row>
@@ -148,7 +152,7 @@
 <br>   
 </ion-row>
 <ion-row align-items-center>
-<br>  
+<h1>Catia Dollar Coins</h1>
 </ion-row>
 <ion-row align-items-center>
 <br>
@@ -158,41 +162,41 @@
 </ion-row> 
 <ion-row align-items-center>
 <br>
-</ion-row>       
+</ion-row>         
 
 
 <ion-row align-items-end>
-  
-  
-            <ion-col align-self-start>
-                Redeemed
-                <img src="/assets/imgs/redeemed.png"  style="height: 50px;width: 50px;" />
-                <h6>122</h6>
-              </ion-col>
 
-            
-            <ion-col align-self-center>
 
+          <ion-col align-self-start>
+              Recargar
+              <img src="/assets/imgs/paypal.svg"  style="height: 50px;width: 50px;  "  />
+             Recargado: <h6>128</h6>
             </ion-col>
 
-            <ion-col align-self-end>
-             Historic
-             <img src="/assets/imgs/historic.png"  style="height: 50px;width: 50px;" />
-             <h6>128</h6>
-            </ion-col>
-  
-  
+          
+          <ion-col align-self-center>
+
+          </ion-col>
+
+          <ion-col align-self-end>
+           Historial Procesado:
+           <img src="/assets/imgs/report.svg"  style="height: 50px;width: 50px;" />
+           <h6>(+)128, (-)128</h6>
+          </ion-col>
+
+
 </ion-row>
 </ion-grid>
 
-      </ion-card-content>
-    </ion-card>   
+    </ion-card-content>
+  </ion-card>   
+<!-- termina seccion de abajo -nmedia"  -->
+
+<!-- termina abajo del derecha  -->
 
 
-
-
-
-      </ion-list>
+    </ion-list>
 <!-- termina la vista del medio -->
 
 
@@ -203,55 +207,90 @@
       <ion-list *ngSwitchCase="'three'">
 
  
-       <ion-grid>
-          <ion-row>
-              <ion-col col-4>
-                  <img src="/assets/imgs/points-cyrus.png"  style="height: 65px;width: 65px;" />
-              </ion-col>
+<!-- empieza vista del derecha -->
 
-                  <!-- <ion-item *ngFor="let point of points" >                   -->
-             <ion-col col-4>
-                  Total Points: {{ points }}
-             </ion-col>
-                  <!-- </ion-item>                   -->
-          </ion-row>
- 
+<ion-card>
+  <ion-card-content>
+
+<ion-grid>
+<ion-row align-items-start>
+      <ion-col col-4>
+      </ion-col>
+      <ion-col col-4>
+        <img src="/assets/imgs/OneCoin.svg" color="red" style="height: 100px;width: 100px;" />
+      </ion-col>
+      <ion-col col-4>
+      {{ points }}
+      </ion-col>
 
 
-          <ion-row>    
-              <ion-col >   
-                <h2>By:</h2>
-                <ion-item *ngFor="let historiale of historiales" class="back-gris">  
-                <h6 class="ion-text-center" > {{this.historiale.actionconsult}} </h6>
-                </ion-item>
-             </ion-col>
-              <ion-col >
-                 <h2>Earned</h2>
-                 <ion-item *ngFor="let historiale of historiales" class="back-gris">  
-                  <h6 class="ion-text-center" > {{this.historiale.total_win_points}} </h6>
-                  </ion-item>
-             </ion-col>
+</ion-row>
 
-              <ion-col >
-                  <h2>Consumed</h2>
-                      <ion-item *ngFor="let historiale of historiales" class="back-gris">  
-                       <h6 class="ion-text-center" > {{this.historiale.total_consumed_points}} </h6>
-                       </ion-item>
-              </ion-col>
+<!-- seccion de abajo - media-->
 
-               <ion-col >
-                      <h2>Total</h2>
-                       <ion-item *ngFor="let historiale of historiales" class="back-gris">  
-                      <h6 class="ion-text-center" > {{this.historiale.total_win_pointsandconsumed}} </h6>
-                     </ion-item>
-              </ion-col>                
-          </ion-row>
-       </ion-grid>     
 
-      </ion-list>
+
+<ion-row align-items-center>
+
+</ion-row>
+<ion-row align-items-center>
+<br>  
+</ion-row>
+<ion-row align-items-center>
+<br>   
+</ion-row>
+<ion-row align-items-center>
+<h1>Catia One Coins</h1>
+</ion-row>
+<ion-row align-items-center>
+<br>
+</ion-row> 
+<ion-row align-items-center>
+<br>
+</ion-row> 
+<ion-row align-items-center>
+<br>
+</ion-row>          
+
+
+<ion-row align-items-end>
+
+
+          <ion-col align-self-start>
+              Recargar
+              <img src="/assets/imgs/paypal.svg"  style="height: 50px;width: 50px;" />
+             Recargado: <h6>0</h6>
+            </ion-col>
+
+          
+          <ion-col align-self-center>
+
+          </ion-col>
+
+          <ion-col align-self-end>
+           Historial Procesado:
+           <img src="/assets/imgs/report.svg"  style="height: 50px;width: 50px;" />
+           <h6>(+)0, (-)0</h6>
+          </ion-col>
+
+
+</ion-row>
+</ion-grid>
+
+    </ion-card-content>
+  </ion-card>   
+<!-- termina seccion de abajo -nmedia"  -->
+
+<!-- termina abajo del derecha  -->
+
+
+    </ion-list>
       <!-- termina vista derecha -->
 
     </div>
+
+
+    
 </ion-content>
 
 <!-- CONTENEDOR FINALIZA -->

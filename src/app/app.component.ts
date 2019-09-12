@@ -59,7 +59,7 @@ export class MyApp {
       { title: 'Inbox', component: InboxPage },
       { title: 'Support', component: SupportPage },
       { title: 'EventosActivos', component: FavoritesPage },
-      { title: 'My Points', component: MypointsPage },
+      { title: 'My Special Points', component: MypointsPage },
       { title: 'Back', component: ProfilePage }, 
       { title: 'Exit', component: HomePage }
       
