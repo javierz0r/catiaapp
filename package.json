@@ -76,7 +76,8 @@
       },
       "cordova-plugin-android-permissions": {},
       "cordova-plugin-googleplus": {
-        "REVERSED_CLIENT_ID": "590201659080-gbla9rm2t42tv41nj40a1mncolpdl2kr.apps.googleusercontent.com"
+        "REVERSED_CLIENT_ID": "590201659080-gbla9rm2t42tv41nj40a1mncolpdl2kr.apps.googleusercontent.com",
+        "PLAY_SERVICES_VERSION": "11.8.0"
       }
     },
     "platforms": [
