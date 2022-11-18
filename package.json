@@ -42,7 +42,7 @@
     "zone.js": "0.8.29"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.801.0",
+    "@angular-devkit/build-angular": "^15.0.0",
     "@angular/cli": "^8.1.0",
     "@ionic/app-scripts": "^3.2.4",
     "@ionic/lab": "2.0.5",
